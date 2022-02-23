@@ -1,51 +1,136 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'css/main.min.css' %}">
-    <title>heySummit</title>
-</head>
-<body>
-    <section>
-        <nav>
 
-        </nav>
-        <main style="border: 1px solid red" class="p-4 pb-0">
-            <div class="flex items-center justify-end">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/main.min.css' %}" />
+    <title>HeySummit</title>
+</head>
+
+<body>
+    <main class="h-screen bg-gray-100">
+        <nav></nav>
+        <section  class="p-4 pb-0 bg-white">
+            <div class="flex items-center justify-end ">
                 <div class="w-24 bg-gray-100 p-2 rounded-lg mr-4 cursor-pointer">
-                    <img   src="{% static "clickup-seeklogo.com.svg" %}" alt="ClickUp">
+                    <img src="{% static "clickup-seeklogo.com.svg" %}" alt="ClickUp">
                 </div>
-                
+
                 <div class="flex items-center mr-auto">
                     <div class="mr-4 cursor-pointer">Passion Economy 2021</div>
-                    <div  class="w-4 mr-4 cursor-pointer"> <img src="{% static "down-arrow.png" %}" alt="downarrow"></div>
-                    <div  class="w-4 cursor-pointer"><img src="{% static "option.png" %}" alt="downarrow"></div>
+                    <div class="w-4 mr-4 cursor-pointer">
+                        <img src="{% static "down-arrow.png" %}" alt="downarrow">
+                    </div>
+                    <div class="w-4 cursor-pointer">
+                        <img src="{% static "option.png" %}" alt="downarrow">
+                    </div>
                 </div>
                 <div class="flex items-center">
                     <div class="flex items-center mr-2">
                         <div class="bg-green-400 h-2 w-2 rounded-full"></div>
-                        <div class="bg-green-400 h-px w-3 "></div>
+                        <div class="bg-green-400 h-px w-3"></div>
                         <div class="bg-green-400 h-2 w-2 rounded-full"></div>
-                        <div class="bg-green-400 h-px w-3  rounded-full"></div>
+                        <div class="bg-green-400 h-px w-3 rounded-full"></div>
                         <div class="bg-green-400 h-2 w-2 rounded-full"></div>
                     </div>
                     <div class="text-xs cursor-pointer">Analysis</div>
                 </div>
-                <div class=" text-purple-500 font-bold text-xs bg-purple-50 p-3 rounded-lg ml-8 mr-4 cursor-pointer">Publish</div>
-                <div class="flex items-center bg-purple-500 text-white font-bold text-xs  p-3 rounded-lg cursor-pointer"> <div class="mr-3">Preview Event</div>  <div class="w-4"> <img src="{% static "down-arrow_1.png" %}" alt="downarrow"></div></div>
+                <div class="text-purple-500 font-bold text-xs bg-purple-50 p-3 rounded-lg ml-8 mr-4 cursor-pointer">
+                    Publish
+                </div>
+                <div class="flex items-center bg-purple-500 text-white font-bold text-xs p-3 rounded-lg cursor-pointer">
+                    <div class="mr-3">Preview Event</div>
+                    <div class="w-4">
+                        <img src="{% static "down-arrow_1.png" %}" alt="downarrow">
+                    </div>
+                </div>
             </div>
             <div class="flex max-w-[40rem] items-center justify-between mt-4">
-                <div class="p-2 border-b-2 border-red-500 cursor-pointer">Overview</div>
+                <div class="p-2 border-b-2 border-red-500 cursor-pointer">
+                    Overview
+                </div>
                 <div class="font-light text-gray-500 cursor-pointer">People</div>
                 <div class="font-light text-gray-500 cursor-pointer">Agenda</div>
                 <div class="font-light text-gray-500 cursor-pointer">Design</div>
                 <div class="font-light text-gray-500 cursor-pointer">Emails</div>
                 <div class="font-light text-gray-500 cursor-pointer">Settings</div>
             </div>
-        </main>
-    </section>
+            
+        </section>
+        <section
+            class="p-4 rounded-lg bg-white max-w-[90vw] ml-4 mt-8">
+            <div class="flex items-center justify-end">
+                <div class=" w-8 mr-3">
+                    <img src="{% static "video-player.png" %}" alt="camera" />
+                </div>
+                <div>
+                    <div class="text-xs font-light text-gray-500">Summit</div>
+                    <div class="font-semibold">Passion Economy 2021</div>
+                </div>
+                <div class="ml-auto flex items-center bg-purple-100 p-2 px-4 rounded-lg">
+                    <div class="w-4"><img src="{% static "video-player.png" %}" alt="Copy Link"></div>
+                    <div class="text-xs font-semibold ml-2">Copy Link</div>
+                </div>
+                <div class="ml-4 flex items-center bg-purple-100  p-2 px-4 rounded-lg">
+                    <div class="text-xs font-semibold"> Manage Event</div>
+                    <div class="w-4 ml-2"><img src="{% static "video-player.png" %}" alt="Copy Link"></div>
+                </div>
+        
+            </div>
+            <div class="mt-4 flex items-center justify-between max-w-[72vw]">
+                <div class="ml-11">
+                    <div class="font-light text-gray-500 mb-2">Event Stats</div>
+                    <div>Ended</div>
+                </div>
+                <div>
+                    <div class="font-light text-gray-500 mb-2">Date</div>
+                    <div>18 Aug - 20 Aug, 2021</div>
+                </div>
+                <div>
+                    <div class="font-light text-gray-500 mb-2">Ticket Price</div>
+                    <div>FREE</div>
+                </div>
+                <div>
+                    <div class="font-light text-gray-500 mb-2">Presenters</div>
+                    <div class="flex relative w-[8rem]">
+                       
+                        <div>
+                            <img class="h-5 w-5 object-contain rounded-full" src="{% static "2-unsplash.jpg" %}" alt="img">
+                        </div>
+                        <div class="absolute left-3">
+                            <img class="h-5 w-5 object-contain rounded-full" src="{% static "2-unsplash.jpg" %}" alt="img">
+                        </div>
+                        <div class="absolute left-6">
+                            <img class="h-5 w-5 object-contain rounded-full" src="{% static "2-unsplash.jpg" %}" alt="img">
+                        </div>
+                        <div class="absolute left-9">
+                            <img class="h-5 w-5 object-contain rounded-full" src="{% static "2-unsplash.jpg" %}" alt="img">
+                        </div>
+                        <div class="absolute left-12">
+                            <img class="h-5 w-5 object-contain rounded-full" src="{% static "2-unsplash.jpg" %}" alt="img">
+                        </div>
+                        <div class="absolute right-12">
+                            <img class="h-5 w-5 object-contain rounded-full" src="{% static "2-unsplash.jpg" %}" alt="img">
+                        </div>
+                        <div class="absolute right-9">
+                            <img class="h-5 w-5 object-contain rounded-full" src="{% static "2-unsplash.jpg" %}" alt="img">
+                        </div>
+                       <div class="absolute right-3 top-0 h-5 w-8 rounded-full bg-purple-100 flex items-center">
+                          <p class="text-[10px]">+700</p>
+                       </div>
+                        
+                    </div>
+                </div>
+                <div>
+                    <div class="font-light text-gray-500 mb-2">Sessions</div>
+                    <div>4</div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>
