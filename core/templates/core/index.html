@@ -20,10 +20,10 @@
     </div>
     
     </nav>
-    <main style="border: 1px solid purple;" class="min-h-screen bg-gray-50 basis-full ">
-        <section style="border: 1px solid red;"  class="p-4 pb-0 px-8 bg-white">
-            <div class="flex items-center justify-end ">
-                <div class="w-24 bg-gray-100 p-2 rounded-lg mr-4 cursor-pointer hover:scale-110 ease-in-out delay-50 duration-300">
+    <main class="min-h-screen bg-gray-50 basis-full ">
+        <section class="p-4 pb-0 px-8 bg-white">
+            <div class="grid grid-cols-2 gap-2 sm:flex sm:items-center sm:justify-end ">
+                <div class="w-24 bg-gray-100 flex items-center p-2 rounded-lg mr-4 cursor-pointer hover:scale-110 ease-in-out delay-50 duration-300">
                     <img src="{% static "clickup-seeklogo.com.svg" %}" alt="ClickUp">
                 </div>
 
@@ -46,18 +46,18 @@
                     </div>
                     <div class="text-xs cursor-pointer ">Analysis</div>
                 </div>
-                <div class="text-[#6F00FF] font-bold text-xs bg-indigo-50 p-3 rounded-lg ml-8 mr-4 cursor-pointer hover:scale-110 ease-in-out delay-50 duration-300">
+                <div class="text-[#6F00FF] font-bold text-xs bg-indigo-50 p-3 rounded-lg sm:ml-8 mr-4 cursor-pointer hover:scale-110 ease-in-out delay-50 duration-300">
                     Publish
                 </div>
-                <div class="flex items-center bg-[#6F00FF] text-white font-bold text-xs p-3 rounded-lg cursor-pointer hover:scale-110 ease-in-out delay-50 duration-300">
+                <div  class="flex items-center bg-[#6F00FF] text-white font-bold text-xs p-3 rounded-lg cursor-pointer hover:scale-110 ease-in-out delay-50 duration-300">
                     <div class="mr-3">Preview Event</div>
                     <div class="w-4">
                         <img src="{% static "down-arrow_1.png" %}" alt="downarrow">
                     </div>
                 </div>
             </div>
-            <div class="flex max-w-[40rem] items-center justify-between mt-4 text-sm">
-                <div class="p-2 border-b-2 border-red-500 font-medium cursor-pointer hover:scale-110 ease-in-out delay-50 duration-300">
+            <div class="grid grid-cols-2 gap-2 sm:flex max-w-[40rem] sm:items-center sm:justify-between mt-4 text-sm">
+                <div class="sm:p-2 border-b-2 border-red-500 font-medium cursor-pointer hover:scale-110 ease-in-out delay-50 duration-300">
                     Overview
                 </div>
                 <div class="font-medium text-gray-400 cursor-pointer hover:scale-110 ease-in-out delay-50 duration-300">People</div>
@@ -68,7 +68,7 @@
             </div>
             
         </section>
-        <section style="border: 1px solid red"
+        <section
             class="p-4 rounded-2xl bg-white max-w-[95vw] md:max-w-[82vw] mr-8 md:mr-0 ml-8 mt-6">
             <div class="grid grid-rows-2 gap-4 sm:flex sm:items-center sm:justify-end">
                 <div class="flex">

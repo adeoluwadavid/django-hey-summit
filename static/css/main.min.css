@@ -475,9 +475,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mr-2 {
   margin-right: 0.5rem;
 }
-.ml-8 {
-  margin-left: 2rem;
-}
 .mr-3 {
   margin-right: 0.75rem;
 }
@@ -486,6 +483,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .mr-8 {
   margin-right: 2rem;
+}
+.ml-8 {
+  margin-left: 2rem;
 }
 .mt-6 {
   margin-top: 1.5rem;
@@ -632,8 +632,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .justify-center {
   justify-content: center;
 }
-.justify-between {
-  justify-content: space-between;
+.gap-2 {
+  gap: 0.5rem;
 }
 .gap-4 {
   gap: 1rem;
@@ -783,6 +783,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 @media (min-width: 640px) {
 
+  .sm\:ml-8 {
+    margin-left: 2rem;
+  }
+
   .sm\:ml-auto {
     margin-left: auto;
   }
@@ -817,6 +821,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .sm\:justify-between {
     justify-content: space-between;
+  }
+
+  .sm\:p-2 {
+    padding: 0.5rem;
   }
 }
 @media (min-width: 768px) {
