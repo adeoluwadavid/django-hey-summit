@@ -15,6 +15,11 @@ If you would like to change your port to say 9000 for instance:
 ```bash
 python3 manage.py runserver 9000
 ```
+If you would like to make changes to the Tailwind utility classes, open another terminal and run:
+```bash
+npm run watch
+```
+It will constantly watch for Tailwind changes:
 
 Open [http://localhost:8000](http://localhost:8000) with your browser to see the result.
 
