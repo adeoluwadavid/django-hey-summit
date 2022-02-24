@@ -460,17 +460,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .float-right {
   float: right;
 }
-.mb-6 {
-  margin-bottom: 1.5rem;
-}
-.mb-auto {
-  margin-bottom: auto;
-}
-.mr-4 {
-  margin-right: 1rem;
+.mr-6 {
+  margin-right: 1.5rem;
 }
 .mr-auto {
   margin-right: auto;
+}
+.mr-4 {
+  margin-right: 1rem;
 }
 .mr-2 {
   margin-right: 0.5rem;
@@ -519,9 +516,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .grid {
   display: grid;
-}
-.hidden {
-  display: none;
 }
 .h-12 {
   height: 3rem;
@@ -619,6 +613,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .grid-rows-2 {
   grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+.flex-row {
+  flex-direction: row;
 }
 .flex-col {
   flex-direction: column;
@@ -833,12 +830,16 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-right: 0px;
   }
 
-  .md\:ml-8 {
-    margin-left: 2rem;
+  .md\:mb-6 {
+    margin-bottom: 1.5rem;
   }
 
-  .md\:flex {
-    display: flex;
+  .md\:mb-auto {
+    margin-bottom: auto;
+  }
+
+  .md\:ml-8 {
+    margin-left: 2rem;
   }
 
   .md\:max-w-\[82vw\] {
@@ -847,6 +848,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
   }
 
   .md\:flex-col {
@@ -859,6 +864,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:p-0 {
     padding: 0px;
+  }
+
+  .md\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 @media (min-width: 1024px) {
